@@ -1,0 +1,9 @@
+{
+	"name": "congigfact",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "51a2e9a7-1517-4302-89c1-b2bceff667ec",
+		"tenantId": "fc3b74f2-d126-40df-9514-892066e7da3b"
+	}
+}
