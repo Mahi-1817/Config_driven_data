@@ -1,5 +1,5 @@
 {
-	"name": "PL_CDC_LOAD_copy1",
+	"name": "PL_CDC_LOAD_AUDIT_TABLES",
 	"properties": {
 		"activities": [
 			{
