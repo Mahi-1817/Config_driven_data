@@ -63,13 +63,24 @@
 							"typeProperties": {
 								"notebookPath": "/Users/edu.mallikarjuna_gmail.com#ext#@edumallikarjunagmail.onmicrosoft.com/Silver_notebooks/silver_layer_transformation",
 								"baseParameters": {
-									"dataset_name": "@item().dataset_name",
+									"dataset_name": {
+										"value": "@item().dataset_name",
+										"type": "Expression"
+									},
 									"bronze_path": {
 										"value": "abfss://bronze@configstr.dfs.core.windows.net",
 										"type": "Expression"
 									},
 									"silver_path": {
 										"value": "abfss://silver@configstr.dfs.core.windows.net",
+										"type": "Expression"
+									},
+									"run_id": {
+										"value": "@pipeline().RunId",
+										"type": "Expression"
+									},
+									"pipeline_name": {
+										"value": "@pipeline().Pipeline",
 										"type": "Expression"
 									}
 								}
