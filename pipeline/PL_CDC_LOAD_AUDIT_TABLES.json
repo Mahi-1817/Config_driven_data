@@ -104,7 +104,10 @@
 									"storeSettings": {
 										"type": "AzureBlobFSReadSettings",
 										"recursive": true,
-										"wildcardFolderPath": "raw/@{item().dataset_name}/",
+										"wildcardFolderPath": {
+											"value": "raw/@{item().dataset_name}/",
+											"type": "Expression"
+										},
 										"wildcardFileName": "*",
 										"enablePartitionDiscovery": false
 									},
@@ -164,9 +167,12 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
-								"notebookPath": "/Users/edu.mallikarjuna_gmail.com#ext#@edumallikarjunagmail.onmicrosoft.com/bronze_noteboooks/incremental_bronze_load",
+								"notebookPath": "/Users/edu.mallikarjuna@gmail.com/Config_driven_data/Bronze_notebooks/bronze_noteboooks/incremental_bronze_load",
 								"baseParameters": {
-									"dataset_name": "@item().dataset_name",
+									"dataset_name": {
+										"value": "@item().dataset_name",
+										"type": "Expression"
+									},
 									"bronze_path": {
 										"value": "abfss://bronze@configstr.dfs.core.windows.net",
 										"type": "Expression"
@@ -247,7 +253,10 @@
 											"scripts": [
 												{
 													"type": "Query",
-													"text": "UPDATE pipeline_log\nSET status = 'NO_DATA',\n    end_time = GETDATE()\nWHERE run_id = '@{pipeline().RunId}'\nAND dataset_name = '@{item().dataset_name}'"
+													"text": {
+														"value": "UPDATE pipeline_log\nSET status = 'NO_DATA',\n    end_time = GETDATE()\nWHERE run_id = '@{pipeline().RunId}'\nAND dataset_name = '@{item().dataset_name}'",
+														"type": "Expression"
+													}
 												}
 											],
 											"scriptBlockExecutionTimeout": "02:00:00"
@@ -360,9 +369,12 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
-								"notebookPath": "/Users/edu.mallikarjuna_gmail.com#ext#@edumallikarjunagmail.onmicrosoft.com/bronze_noteboooks/audit_notebook",
+								"notebookPath": "/Users/edu.mallikarjuna@gmail.com/Config_driven_data/Bronze_notebooks/bronze_noteboooks/audit_notebook",
 								"baseParameters": {
-									"dataset_name": "@item().dataset_name",
+									"dataset_name": {
+										"value": "@item().dataset_name",
+										"type": "Expression"
+									},
 									"bronze_path": {
 										"value": "abfss://bronze@configstr.dfs.core.windows.net",
 										"type": "Expression"
