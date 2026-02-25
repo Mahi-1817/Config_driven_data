@@ -15,7 +15,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/Users/edu.mallikarjuna_gmail.com#ext#@edumallikarjunagmail.onmicrosoft.com/gold_notebooks/gold_layer_for_customers"
+					"notebookPath": "/Users/edu.mallikarjuna@gmail.com/Config_driven_data/Gold_notebooks/gold_notebooks/gold_layer_for_customers"
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureDatabricks1",
@@ -35,7 +35,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/Users/edu.mallikarjuna_gmail.com#ext#@edumallikarjunagmail.onmicrosoft.com/gold_notebooks/gold_layer_for_products"
+					"notebookPath": "/Users/edu.mallikarjuna@gmail.com/Config_driven_data/Gold_notebooks/gold_notebooks/gold_layer_for_products"
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureDatabricks1",
@@ -68,7 +68,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/Users/edu.mallikarjuna_gmail.com#ext#@edumallikarjunagmail.onmicrosoft.com/gold_notebooks/gold_layer_for_fact_tables"
+					"notebookPath": "/Users/edu.mallikarjuna@gmail.com/Config_driven_data/Gold_notebooks/gold_notebooks/gold_layer_for_fact_tables"
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureDatabricks1",
@@ -95,7 +95,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/Users/edu.mallikarjuna_gmail.com#ext#@edumallikarjunagmail.onmicrosoft.com/gold_notebooks/BUILDING_ANALYTICS"
+					"notebookPath": "/Users/edu.mallikarjuna@gmail.com/Config_driven_data/Gold_notebooks/gold_notebooks/BUILDING_ANALYTICS"
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureDatabricks1",
